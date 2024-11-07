@@ -3,9 +3,9 @@
 define("BASE_URL", "https://sevafoundaton.in/seva-new/ppay/");
 define("API_STATUS", "UAT"); //LIVE OR UAT
 define("MERCHANTIDLIVE", "");
-define("MERCHANTIDUAT", "PGTESTPAYUAT86");  //Sandbox testing
+define("MERCHANTIDUAT", "PGTESTPAYUAT86");  //For Live Change Value otherwise use Sandbox testing
 define("SALTKEYLIVE", " ");
-define("SALTKEYUAT", "96434309-7796-489d-8924-ab56988a6076");
+define("SALTKEYUAT", "96434309-7796-489d-8924-ab56988a6076"); //For Live Change Value otherwise use Sandbox testing
 define("SALTINDEX", "1");
 define("REDIRECTURL", "paymentstatus.php");
 define("SUCCESSURL", "success.php");
