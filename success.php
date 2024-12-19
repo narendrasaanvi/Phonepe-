@@ -10,14 +10,6 @@ if (isset($_SESSION['total_amount'])) {
   $mobile = $_SESSION['mobile'];
   $city = $_SESSION['city'];
   $amount = $_SESSION['amount'];
-  $medicines_amount = $_SESSION['medicines_amount'];
-  $shelter_amount = $_SESSION['shelter_amount'];
-  $doctor_amount = $_SESSION['doctor_amount'];
-  $total_amount = $_SESSION['total_amount'];
-
-  // Prepare and bind prepared statement for secure insertion
-  $stmt = $conn->prepare("INSERT INTO users (name, email, mobile, city, amount, medicines_amount, shelter_amount, doctor_amount, total_amount) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
-  $stmt->bind_param("ssssdssss", $name, $email, $mobile, $city, $amount, $medicines_amount, $shelter_amount, $doctor_amount, $total_amount);
 
   // Execute and check insertion status
   if ($stmt->execute()) {
